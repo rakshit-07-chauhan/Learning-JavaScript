@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb2</title>
+   
+</head>
+<body>
+    
+          <center>
+            <div style="align-items: center;">
+             <img style="width: 300px;"  id="switch" src="off.jpg"  >
+           <br>
+            <button id="switchBtn">Switch On</button>
+          </div>
+          </center>
+   
+</body>
+ <script>
+
+    const btn = document.getElementById("switchBtn");
+    const bulb = document.getElementById("switch")
+    btn.addEventListener("click",function(){
+        if(bulb.src.includes("off.jpg")){
+            btn.innerHTML="Switch Off"
+            bulb.src = "on.jpg"
+        }else{
+            btn.innerHTML="Switch On"
+            bulb.src = "off.jpg"
+        }
+})
+        
+    </script>
+</html>
+
+// on click: write the value on the page
+// on click: show the values through alert
+// on click: change the value in related textboxes
+// add Click event of the button by listner
+Bulb Switch On/Off (JavaScript)Assignment

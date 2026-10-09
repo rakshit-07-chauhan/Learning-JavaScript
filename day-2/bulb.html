@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+   
+</head>
+<body>
+    
+           <img style="width: 50px;"  id="switch" src="off.jpg"  >
+         <button id="on" type="button" onclick="switchOn()">Switch On</button>
+    
+   
+        <button id="off" onclick="switchOff()">Switch Off</button>
+   
+    
+</body>
+ <script>
+        function switchOn(){
+        document.getElementById("switch").src = "on.jpg";
+        }
+        function switchOff(){
+            document.getElementById("switch").src="off.jpg"
+        }
+    </script>
+</html>
