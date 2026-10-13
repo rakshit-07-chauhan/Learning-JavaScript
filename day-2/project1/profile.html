@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+<body>
+    <h1>Student Infromation</h1>
+    <p>Name: <span id="displayName"></span></p>
+    <p>Age: <span id="displayAge"></span></p>
+    <p>Course: <span id="displayCourse"></span></p>
+
+    <script>
+    const name = localStorage.getItem("userName")
+    const age = localStorage.getItem("userAge")
+    const course  = localStorage.getItem("userCourse")
+
+    document.getElementById("displayName").textContent =
+            name || "No name found";
+
+    document.getElementById("displayAge").textContent =
+                    age || "No age found";
+    document.getElementById("displayCourse").textContent =
+                    course || "No course found";
+        </script>
+</body>
+
+</html>
